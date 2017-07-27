@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-  	<title>しーかわいい</title>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+  		<title>魔剤進捗発狂芸人の部屋</title>
+  		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+  		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+		$(function() {
+		    $(".tab li").click(function() {
+		        var num = $(".tab li").index(this);
+		        $(".tabContent").removeClass('active');
+		        $(".tabContent").eq(num).addClass('active');
+		        $(".tab li").removeClass('active');
+		        $(this).addClass('active')
+		    });
+		});
+		</script>
   	</head>
   	<body>
-		<h1 style="text-align: center">HP作れるらしいから作ったよたまちゃん</h1>
+		<h1 style="text-align: center">魔剤進捗発狂芸人の部屋</h1>
 		<p></p>
 		<HR>
-		    <h2 style="text-align: center">htmlって難しくない？</h2>
-		    <Div Align="center">
-			<em><strong>しーかわいい</strong></em>
-			<BR>
-			<img src="img/myicon.jpg"/ width="400" height="400">
-			<BR>
-			<font size="4">lina_appleberryといいます。そのうちまともなHPにしたいですね…（届かぬ想い）</font>
-			</Div>
-		<HR>
-		<a href="https://twitter.com/lina_appleberry">
-      		<p style="text-align: center"><strong>Twitter</strong></p>
-      	</a>>
+	    <Div Align="center">
+			<ul class="tab">
+			    <li class="active">Profile</li>
+			    <li>Works</li>
+			    <li>Gallery</li>
+			    <li>Link</li>
+			</ul>
+			 
+			<div class="tabContent active">
+				<em><strong>しーかわいい</strong></em>
+				<BR>
+				<img src="img/myicon.jpg"/ width="400" height="400">
+				<BR>
+				<font size="4">lina_appleberryといいます。そのうちまともなHPにしたいですね…（届かぬ想い）</font>
+			</div>
+			<div class="tabContent">ないです</div>
+			<div class="tabContent">ないです</div>
+			<div class="tabContent">
+				<a href="https://twitter.com/lina_appleberry">
+      				<p style="text-align: center"><strong>Twitter</strong></p>
+      			</a>
+			</div>
+		</Div>
   	</body>
 </html>
