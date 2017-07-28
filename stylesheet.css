@@ -120,6 +120,7 @@ body {
 .murquee p {
     font-size: 160%;
     font-weight:bold;
+    font-style:oblique; 
     transform:translateX(100%);
 }
 .animation1 {
