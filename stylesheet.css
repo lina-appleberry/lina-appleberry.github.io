@@ -111,7 +111,35 @@ body {
     background-color: #C0C0C0;
     text-align: center; 
 }
-/*tabメニューについて http://fukafuka295.jp/hp/tab_menu.html*/
+
+/* 流れる文字 */
+.murquee {
+    height: 60px;
+    overflow: hidden;
+}
+.murquee p {
+    font-size: 160%;
+    transform:translateX(100%);
+}
+.animation1 {
+    animation: murquee1 10s linear infinite;
+    -moz-animation: murquee1 10s linear infinite;
+    -webkit-animation: murquee1 10s linear infinite;
+}
+@keyframes murquee1 {
+    0%  {transform:translateX(100%);}
+    100% {transform:translateX(-100%);}
+}  
+@-moz-keyframes murquee1 {
+    0%  {-moz-transform:translateX(100%);}
+    100% {-moz-transform:translateX(-100%);}
+}  
+@-webkit-keyframes murquee1 {
+    0%  {-webkit-transform:translateX(100%);}
+    100% {-webkit-transform:translateX(-100%);}
+}
+
+/* tabメニューについて http://fukafuka295.jp/hp/tab_menu.html */
 ul.tab {
 	list-style: none;
 }
