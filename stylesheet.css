@@ -112,7 +112,7 @@ body {
     text-align: center; 
 }
 
-/* 流れる文字 */
+/* 右から流れる文字 http://plustrick.com/coding_css_marquee/ */
 .murquee {
     height: 60px;
     overflow: hidden;
