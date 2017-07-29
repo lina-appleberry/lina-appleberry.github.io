@@ -170,3 +170,14 @@ div.tabContent {
 div.active {
     display: block;
 }
+
+/* 画像配置サイズ http://sugutsukaeru.jp/support/401/ */
+.galleryFig {
+  display: inline-block; /* ここがポイント */
+  height: 400px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.galleryFig img {
+  height: 100%;
+}
