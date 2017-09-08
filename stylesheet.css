@@ -114,7 +114,7 @@ body {
 
 /* 右から流れる文字 http://plustrick.com/coding_css_marquee/ */
 .murquee {
-    height: 60px;
+    height: 80px;
     overflow: hidden;
 }
 .murquee p {
